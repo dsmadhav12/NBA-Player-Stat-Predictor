@@ -1,6 +1,9 @@
-import kagglehub
+from kaggle.api.kaggle_api_extended import KaggleApi
 
-# Download latest version
-path = kagglehub.dataset_download("owenrocchi/nba-advanced-stats-20022022")
 
-print("Path to dataset files:", path)
+# Initialize Kaggle API
+api = KaggleApi()
+api.authenticate()
+
+# Download the dataset
+api.dataset_download_files('owenrocchi/nba-advanced-stats-20022022', path='datasets', unzip=True)
