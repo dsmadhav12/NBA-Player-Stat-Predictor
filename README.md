@@ -1,3 +1,2 @@
 # NBA-Player-Stat-Predictor
-
-Average difference in PER: -0.07910962566844935
+This project predicts the Player Efficiency Rating (PER) of active NBA players for upcoming games using a machine learning model (RandomForestRegressor) trained on a player's previous season's statistics from 2002-2022. The model compares predicted PER values to actual and calculates the difference for each player. The results are stored in a CSV file, including the player name, predicted PER, actual PER, and the difference between them, allowing for easy evaluation of the model's performance. The Average difference in PER was -0.07910962566844935. The data set was taken off of Kaggle and was parsed through various programs to clean and format the data.
